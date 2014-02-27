@@ -1,0 +1,12 @@
+{
+  "name": "winston-slack",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "node-slack": "0.0.3",
+    "winston": "~0.7.2"
+  }
+}
