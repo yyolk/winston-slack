@@ -11,13 +11,15 @@ domain: sub-domain of the slack instance
 apiToken: token given by the slack integration API
 username: name displayed in the chat channel. default "winston-slack"
 
-var winston = require('winston');
-var slackTrans = require('./lib/winston-slack');
+<code>
+    var winston = require('winston'),
+        slackTrans = require('./lib/winston-slack');
 
-var slack = new (winston.transports.SlackLogger)({
-    domain: "tritondigital",
-    apiToken: "niBMdytjXzEZuj7w7tj9HQoo",
-    channel: "#test-annoying-things",
-    username: "winston-slack",
-    level: 'error'
-});
+    var slack = new (winston.transports.SlackLogger)({
+        domain: "yourcompany",
+        apiToken: "j7w7tjBMdytjXzEZu9HQooni",
+        channel: "#test-channel",
+        username: "winston-slack",
+        level: 'error'
+    });
+</code>
