@@ -1,6 +1,6 @@
 {
   "name": "winston-slack",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Andrew Batchelor <andy.batchelor@tritondigital.com",
   "repository": {
     "type": "git",
