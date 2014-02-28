@@ -21,13 +21,16 @@ username: name displayed in the chat channel. default "winston-slack"
 
 <code>
 
+
     var winston = require('winston');
-    require('winston-slack');
-    var slack = new (winston.transports.SlackLogger)({
+    var something = require('winston-slack').Slack;
+
+    winston.add(something, {
         domain: "yourcompany",
         apiToken: "j7w7tjBMdytjXzEZu9HQooni",
         channel: "#test-channel",
-        username: "winston-slack",
-        level: 'error'
+        username: "ErrorBot",
+        level: 'error',
+        handleExceptions : true
     });
 </code>
