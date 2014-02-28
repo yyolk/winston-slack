@@ -12,9 +12,9 @@ apiToken: token given by the slack integration API
 username: name displayed in the chat channel. default "winston-slack"
 
 <code>
-    var winston = require('winston'),
-        slackTrans = require('./lib/winston-slack');
 
+    var winston = require('winston');
+    require('./lib/winston-slack');
     var slack = new (winston.transports.SlackLogger)({
         domain: "yourcompany",
         apiToken: "j7w7tjBMdytjXzEZu9HQooni",
