@@ -1,16 +1,26 @@
 {
   "name": "winston-slack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Andrew Batchelor <andy.batchelor@tritondigital.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/TDASinternal/winston-slack"
   },
-  "keywords": [ "logging", "sysadmin", "tools", "winston", "slack", "log", "logger" ],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "slack",
+    "log",
+    "logger"
+  ],
   "dependencies": {
     "node-slack": "0.0.3",
     "winston": "~0.7.2"
   },
   "main": "./lib/winston-slack",
-  "engines": { "node": ">= 0.6.0" }
+  "engines": {
+    "node": ">= 0.6.0"
+  }
 }
