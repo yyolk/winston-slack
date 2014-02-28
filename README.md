@@ -6,6 +6,7 @@ Winston Transport for Slack chat integration
 $ npm install winston-slack 
 
 Also requires install of winston
+
 $ npm install winston
 
 
