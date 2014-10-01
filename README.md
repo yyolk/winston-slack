@@ -66,7 +66,8 @@ in coffeescript:
 
 ```coffeescript
 winston = require 'winston'
-wslack = require('winston-slack').Slack
+wslack = require 'winston-slack'
+    .Slack
 
 winston.add wslack,
     domain: "yourcompany"
