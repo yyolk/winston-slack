@@ -2,7 +2,7 @@
 
 * * * 
 
-Basic transport that works just like all other winston transports. Sends logged messages to a specified slack chat channel
+Sends logged messages to a specified slack chat channel
 
 
 Winston Transport for Slack chat integration
