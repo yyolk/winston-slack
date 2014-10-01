@@ -48,27 +48,31 @@ the level of verbosity
 
 in javascript:
 
-    var winston = require('winston');
-    var wslack = require('winston-slack').Slack;
+```javascript
+var winston = require('winston');
+var wslack = require('winston-slack').Slack;
 
-    winston.add(wslack, {
-        domain: "yourcompany",
-        apiToken: "j7w7tjBMdytjXzEZu9HQooni",
-        channel: "#test-channel",
-        username: "ErrorBot",
-        level: 'error',
-        handleExceptions : true
-    });
+winston.add(wslack, {
+    domain: "yourcompany",
+    apiToken: "j7w7tjBMdytjXzEZu9HQooni",
+    channel: "#test-channel",
+    username: "ErrorBot",
+    level: 'error',
+    handleExceptions : true
+});
+```
 
 in coffeescript:
 
-    winston = require 'winston'
-    wslack = require('winston-slack').Slack
-    
-    winston.add wslack,
-        domain: "yourcompany"
-        apiToken: "j7w7tjBMdytjXzEZu9HQooni"
-        channel: "#test-channel"
-        username: "ErrorBot"
-        level: 'error'
-        handleExceptions : true
+```coffeescript
+winston = require 'winston'
+wslack = require('winston-slack').Slack
+
+winston.add wslack,
+    domain: "yourcompany"
+    apiToken: "j7w7tjBMdytjXzEZu9HQooni"
+    channel: "#test-channel"
+    username: "ErrorBot"
+    level: 'error'
+    handleExceptions : true
+```
